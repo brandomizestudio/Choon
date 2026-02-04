@@ -2035,6 +2035,12 @@ p {
         -webkit-backdrop-filter: blur(8px);
     }
     
+    /* Hide decorative gradient overlays on mobile */
+    .hero::before,
+    .hero::after {
+        display: none !important;
+    }
+    
     /* Disable expensive transforms on mobile */
     .product-card:hover,
     .craft-statement:hover,
@@ -2206,6 +2212,11 @@ p {
     .hero {
         padding: 100px var(--space-md) var(--space-xl);
         min-height: 90vh;
+    }
+    
+    .hero::before,
+    .hero::after {
+        display: none !important;
     }
     
     .hero-container {
